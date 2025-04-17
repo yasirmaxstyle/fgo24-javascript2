@@ -42,7 +42,7 @@ const data = [
 
 // console.log(data[0][1][3].string[1].value);
 
-// const [a,[s,d,f,{string:[x,{value}]}]] = data 
-const { string: [x, { value }] } = data[0][1][3]
+const [[a, [s, d, f, { string: [x, { value }] }]]] = data
+// const { string: [x, { value }] } = data[0][1][3]
 
 console.log(value)
