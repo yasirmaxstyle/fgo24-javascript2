@@ -1,11 +1,11 @@
 // main function
-const celsius = (c, to) => {
+const celsius = (c, type) => {
     if (typeof c !== "number") return
-    return to(c)
+    return type(c)
 }
 
 // to fahrenheit callback
-const fahrenheit = (c) => {
+const f = (c) => {
     const result = 9 / 5 * c + 32
     return result
 }
@@ -18,7 +18,7 @@ celsius(50, (c) => {
 })
 
 // to kelvin callback
-const kelvin = (c) => {
+const k = (c) => {
     const result = c + 273
     return result
 }
@@ -31,7 +31,7 @@ celsius(50, (c) => {
 })
 
 // to reamur callback
-const reamur = (c) => {
+const r = (c) => {
     const result = 4 / 5 * c
     return result
 }
